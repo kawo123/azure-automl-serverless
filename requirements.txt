@@ -1,0 +1,5 @@
+azureml-opendatasets==1.0.69
+azureml-sdk[automl]==1.0.69
+pandas==0.23.4
+jupyter==1.0.0
+scikit-learn==0.20.3
