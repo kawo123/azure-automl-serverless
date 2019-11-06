@@ -1,8 +1,17 @@
 # Azure Automated Machine Learning and Serverless
 
-Sample code for automated machine learning (automl) and serverless model deployment.
+Sample code for automated machine learning (automl) and serverless model deployment. The motivations for serverless model deployment are 1) ability to focus on business logic and 2) cost effectiveness for infrequent prediction
 
 **Note**: At the time of writing, there is an outstanding gap in Azure Function Python where some of the system dependencies are missing. Until the issue is resolved, it is expected that this sample code would not work on Azure Function. For more details, see [Gotcha](#Gotcha) section
+
+## Architecture
+
+![Azure AutoML Serverless Deployment Architecture](./doc/architecture.png "Azure AutoML Serverless Deployment Architecture")
+
+1. User uses [Azure Machine Learning Python SDK](https://docs.microsoft.com/en-us/python/api/overview/azure/ml/intro?view=azure-ml-py) (AML) for experiment tracking, model registry, and AutoML
+2. AML submits AutoML training job locally
+3. AML returns best performing model to the user
+4. User deploys best performing model to Azure Function
 
 ## Pre-requisite
 
