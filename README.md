@@ -11,7 +11,7 @@ Sample code for automated machine learning (automl) and serverless model deploym
 1. User uses [Azure Machine Learning Python SDK](https://docs.microsoft.com/en-us/python/api/overview/azure/ml/intro?view=azure-ml-py) (AML) for experiment tracking, model registry, and AutoML
 2. AML submits AutoML training job locally
 3. AML returns best performing model to the user
-4. User deploys best performing model to Azure Function
+4. User deploys best performing model to [Azure Function](https://docs.microsoft.com/en-us/azure/azure-functions/functions-overview)
 
 ## Pre-requisite
 
