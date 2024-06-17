@@ -2,4 +2,4 @@ azure-functions
 azureml-opendatasets==1.0.69
 azureml-sdk[automl]==1.0.69
 pandas==0.23.4
-scikit-learn==0.20.3
+scikit-learn==1.5.0
